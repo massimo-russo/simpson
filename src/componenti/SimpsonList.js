@@ -3,9 +3,10 @@ import simpsons from '../dati/simpsonData.json'
 import Simpson from './Simpson'
 
 export class SimpsonList extends Component {
-    hideHandler = () =>{
-            
+    hideHandler = () =>{    
     }
+
+
     render() {
         return (
             <div className="SimpsonContainer">
@@ -15,6 +16,7 @@ export class SimpsonList extends Component {
                         id={simpson.id}
                         name={simpson.name}
                         eta={simpson.age}
+                        rimuovi={this.handleDelete}
                      />
                  ))}
                 
