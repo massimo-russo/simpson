@@ -24,7 +24,7 @@ export class Simpson extends Component{
                     <li> Name: {this.props.name}</li>
                      <br></br>
                   <img 
-                        src={require(`../img/simpsonimg/${this.props.name}.svg`)}
+                        src={require(`../img/simpsonimg/${this.props.name}.svg`).default}
                         style={{height:60}} 
                     />
                 <br></br>
